@@ -1,0 +1,8 @@
+<div class="uk-width-1-1 uk-margin-top">
+  <div class="" *ngFor="let item of todoList">
+    <label for="{{ item.id }}">
+      <input type="checkbox" class="uk-checkbox" id="{{ item.id }}" [checked]="item.status">
+      {{ item.content }}
+    </label>
+  </div>
+</div>
